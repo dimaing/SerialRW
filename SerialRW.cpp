@@ -22,7 +22,7 @@ int SerialRW::serial_getchar(FILE* f){
   return Serial.read();  
 }
 
-void SerialRW::begin(int speed){
+void SerialRW::begin(double speed){
   Serial.begin(speed);
   // Set up stdout
   fdev_setup_stream( &serial_stdout, serial_putchar, NULL, _FDEV_SETUP_WRITE);

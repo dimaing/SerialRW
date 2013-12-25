@@ -14,7 +14,7 @@ class SerialRW
   /*
 
   */
-    static void begin(int speed);
+    static void begin(double speed);
   private:
 	SerialRW();
     static FILE serial_stdout;
